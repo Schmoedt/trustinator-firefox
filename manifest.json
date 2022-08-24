@@ -1,0 +1,17 @@
+{
+  "name": "Trustinator",
+  "version": "1.0.0",
+  "description": "SWT2 Project, created by students of the Hochschule Ruhr-West in Germany.",
+  "permissions": ["activeTab" , "tabs"],
+  "browser_action": {
+    "default_popup": "implementation/view/StartView.html",
+    "default_icon": {
+      "16": "resources/img/icon16.png",
+      "32": "resources/img/icon32.png",
+      "64": "resources/img/icon64.png",
+      "128": "resources/img/icon128.png",
+      "1000": "resources/img/icon1000.png"
+    }
+  },
+  "manifest_version": 2
+}

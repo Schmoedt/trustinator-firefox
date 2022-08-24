@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: #052438 #031724;">  
+	<head>    
+		<script type="module" src ='../scripts/MainView.js'></script>
+		<meta charset="UTF-8">    
+		<meta name="viewport" content="width=device-width, initial-    scale=1.0">    
+		<link rel="stylesheet" href="./Config/config.css" >
+		<title>Trustinator</title> 
+	</head>
+	<body class="alignment" style="background-color:#031724;">  
+		<a href="StartView.html">
+			<img class="logo-back" src="/resources/img/arrow_left500.png">
+		</a>
+		<img class="logo-top" src="/resources/img/icon1000.png">
+		<p style="color:#031724;"> - </p>
+		<h1 class="yellow-h1">Trustinator</h1>
+		<hr class="yellow-hr">
+
+		<!-- Hier wird der Score aus der JS eingefügt. -->
+		<h3 class="yellow-h3">Score</h3>
+		<p class="score-text-bold" style="text-align: center" id="Score">Nicht berechenbar!</p>
+		
+		<!-- Tabelle mit allen Bewertungsmetriken, die den Score beeinflussen -->
+
+		<table style="width:100%; min-width: none 1000px;">
+			<th class="tableHeader" colspan="2">Bewertungsmetriken</th>
+			<tr>
+				<td class="hovertext" data-hover="Die Domain des untersuchten Webshops">Domain</td>
+				<td class="yellow-td" id="Url"  style="color: rgb(255, 196, 0)">-</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="hovertext" data-hover="Der Link zum Impressum, sofern eines gefunden wurde. Ein Impressum ist laut §5 TMG verpflichtend.">Impressum</td>
+				<td class="yellow-td" id="Impressum" style="color: rgb(255, 196, 0)">-</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td class="hovertext" data-hover="Serverstandort, von dem aus der Webshop gehosted wird.">Hosting</td>
+				<td class="yellow-td" id="Hosting" style="color: rgb(255, 196, 0)">-</td>
+			</tr>
+
+			<tr>
+				<td class="hovertext" data-hover="Abgleich der angegebenen Handelsregisternummer mit der Open Corporates Datenbank.">Open Corporates</td>
+				<td class="yellow-td" id="OpenCorporates" style="color: rgb(255, 196, 0)">-</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="hovertext" data-hover="Verschlüsselung der übertragenen Daten zwischen Client und Server. Ist keine Verschlüsselung vorhanden, werden die Daten ungesichert übertragen.">SSL</td>
+				<td class="yellow-td" id="Https" style="color: rgb(255, 196, 0)">-</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="hovertext" data-hover="Durchschnittsbewertung des Webshops auf dem Bewertungsportal 'Trustpilot'">Trustpilot Score</td>
+				<td class="yellow-td" id="Trustpilot" style="color: rgb(255, 196, 0);">-</td>
+				<td></td>
+			</tr>
+			<th class="tableHeader" colspan="2">Blacklists</th>
+			<tr>
+				<td class="hovertext" data-hover="Liste zur Warnung vor Fake-Shops durch das Unternehmen 'Trusted Shops'">Trusted Shops</td>
+				<td class="yellow-td" id="Trusted_Shops" style="color: rgb(255, 196, 0)">-</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="hovertext" data-hover="Liste zur Warnung vor unseriösen Webseiten durch die Informationsplattform 'Watchlist Internet'">Watchlist Internet</td>
+				<td class="yellow-td" id="Watchlist_Internet" style="color: rgb(255, 196, 0);">-</td>
+				<td></td>
+			</tr>
+		</table>
+
+		<p class="adviceText">Tipp: Für weitere Informationen können Sie den Mauszeiger über die gewünschte Metrik halten.</p>
+	</body>	
+</html>

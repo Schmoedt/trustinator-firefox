@@ -1,0 +1,255 @@
+/*
+> Importing custom Fonts.
+> "Montserrat" is free to use for non-monetized projects.
+*/
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../Fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url(../Fonts/Montserrat/Montserrat-Italic.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-BoldItalic';
+    src: url(../Fonts/Montserrat/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../Fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url(../Fonts/Montserrat/Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-ThinItalic';
+    src: url(../Fonts/Montserrat/Montserrat-ThinItalic.ttf);
+}
+
+.alignmentStart{
+    text-align: center;
+    width: 380px;
+    height: 400px;
+    overflow-y: hidden
+    /*display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(60, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;*/
+}
+
+.alignment{
+    text-align: center;
+    width: 380px;
+    height: 600px;
+    /*display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(60, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;*/
+}
+
+.hovertext {
+    position: relative;
+}
+
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 320px;
+    background-color:rgb(255, 196, 0);
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 0;
+    transition: opacity 0.75s ease-in-out;
+    
+    position: absolute;
+    z-index: 1;
+    left: 0;
+
+
+    font-family: 'Montserrat-ThinItalic';
+    src: url(../Fonts/Montserrat/Montserrat-ThinItalic.ttf);
+    font-weight: 900;
+    font-size: 11pt;
+    font-style: italic;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.yellow-h1 {
+    font-family: Montserrat-Bold;
+    letter-spacing: 8px;
+    color: rgb(255, 196, 0);
+}
+
+.yellow-h2 {
+    font-family: Montserrat-Italic;
+    letter-spacing: 2px;
+    color: rgb(255, 196, 0);
+}
+
+.yellow-h3 {
+    font-size: 18pt;
+    font-family: Montserrat-Italic;
+    letter-spacing: 2px;
+    color: rgb(255, 196, 0);
+    line-height: 0pt;
+}
+
+.white-p {
+    font-family: Montserrat-ThinItalic;
+    color: white;
+}
+
+.link-about {
+    font-family: Montserrat-Italic;
+    color: rgb(255, 196, 0);
+    font-size: 12pt;
+    cursor: pointer;
+    text-decoration:none;
+    text-align: left;
+}
+
+.link-survey {
+    font-family: Montserrat-Italic;
+    color: rgb(255, 196, 0);
+    font-size: 12pt;
+    cursor: pointer;
+    text-decoration:none;
+    text-align: right;
+}
+
+table, th, td {
+    border:1px solid #031724;
+    font-family: Montserrat-Thin;
+    color: white;
+    text-align: left;
+}
+
+.tableHeader {
+    font-family: Montserrat-Italic;
+    color: rgb(255, 196, 0);
+    font-size: 12pt;
+}
+
+.yellow-hr {
+    color: rgb(255, 196, 0);
+}
+
+.white-hr {
+    color: white;
+}
+
+.logo-top {
+    position: fixed;
+    top: 5px;
+    left: 172.5px;
+    height: 45px;
+    width: 45px;
+}
+
+.logo-back {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.score-text-regular {
+    font-size: 16pt;
+    font-family: Montserrat-Italic;
+    color: white;
+}
+
+.score-text-bold {
+    font-size: 18pt;
+    font-family: Montserrat-BoldItalic;
+    color: white;
+    line-height: 25%;
+}
+
+.loader {
+    border: 12px solid #031724;
+    border-top: 12px solid rgb(255, 196, 0); 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 44.5%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loaderText {
+    font-family: Montserrat-Italic;
+    color: rgb(255, 196, 0);
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50.5%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.adviceText {
+    font-family: 'Montserrat-ThinItalic';
+    color: white;
+    font-size: 10pt;
+}
+
+.source {
+    font-family: Montserrat-Italic;
+    color: rgb(255, 196, 0);
+    font-size: 12pt;
+    cursor: pointer;
+    text-decoration:none;
+    text-align: center;
+}
+
+#startButton {
+    background-color: #031724;
+    color: rgb(255, 196, 0);
+    border-radius: 9px;
+    cursor: pointer;
+    height: 2.5rem;
+    padding: 0 1.6rem;
+    border-color: rgb(255, 196, 0);
+    transition: all .35s;
+    font-family: Montserrat-Bold;
+    background-clip:padding-box;
+    border-style: solid;
+}
+
+#startButton:hover {
+    font-family: Montserrat-Bold;
+    background-color: rgb(255, 196, 0);
+    color: #031724;
+}
+
+#about {
+    position: absolute;
+    left: 26%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+#studie {
+    position: absolute;
+    left: 69%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
